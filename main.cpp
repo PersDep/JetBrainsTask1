@@ -9,7 +9,7 @@ int main() {
     int amount = 1000;
 
     for (int i = 1; i <= amount; ++i) {
-        long long temp = (long long)(i);
+        long long temp = i;
         for (int j = 1; j < i; ++j) {
             temp *= i;
             if (temp >= numeric_limits<long long>::max() / amount)
